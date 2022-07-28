@@ -1,0 +1,68 @@
+@charset "ISO-8859-1";
+
+h2 {
+	color: blue;
+	font-size: 30px;
+	text-align: center;
+	font-variant: inherit;
+}
+
+.navbar-collapse>ul>li a {
+	color: red;
+}
+
+h3 {
+	color: red;
+	font-size: 40px;
+	font-weight: 900;
+}
+
+h3:hover {
+	color: green;
+}
+
+header {
+	background-image: url(banner2.png);
+	padding-bottom: 5px;
+	background-size: 100% 100%;
+}
+
+.section {
+	margin-top: 5px
+}
+
+.container .row .col .card-body .tt a:hover {
+	color: yellow;
+}
+
+h2:hover {
+	color: orangered;
+}
+
+nav {
+	color: white;
+	font-variant: small-caps;
+	line-height: 15px;
+}
+
+body {
+	background-color: buttonface;
+}
+
+.nav .navbar .collapse  .navbar-nav .nav-item .nav-link a {
+	color: white;
+}
+
+b:hover {
+	color: red;
+}
+
+b {
+	color: fuchsia;
+}
+.tt {
+	font-family: fantasy;
+}
+.section .row {
+	background-color: yellow;
+}

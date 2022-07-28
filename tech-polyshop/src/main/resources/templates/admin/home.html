@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{admin/dashboardLayout.html}">
+
+
+<head>
+<title>Nidal-shop</title>
+</head>
+<body>
+
+
+	<section class="row" layout:fragment="content">
+		<div class="col  mt-2 mb-3">
+			<div class="card">
+
+				<div class="card-body">
+
+					<div class="row mt-2 mb-2">
+						<div class="col">
+							<form>
+								<div class="form-inline float-left">
+									<label for="name"></label> <input  type="text"
+										class="form-control ml-2" name="name" id="name"
+										aria-describedby="helpId" placeholder="Search Product">
+									<button class="btn btn-outline-primary ml-2"><i class="fa fa-search"></i></button>
+								</div>
+							</form>
+							<div class="tt">
+								<a style="font-size: 25px"
+									class="btn btn-sm btn-outline-danger m-2 float-right  "
+									th:href="@{/admin/products/add}">Add New Products</a>
+							</div>
+						</div>
+					</div>
+
+
+					<section style="background-color: gray;" class="row">
+						<div class="col-10">
+							<div class="row p-2">
+								<div class="col-4 mt-2">
+									<div class="card text-center">
+										<div class="card-body">
+											<img src="../images/realme-9-pro.jpg" width="90%" alt=""
+												class="img-fuid">
+											<div class=" text-center mt-2">
+												<b>Realme C9 Pro</b>
+											</div>
+										</div>
+										<div class="card-footer">
+											<a href="#" class="btn btn-success">Buy</a> <a
+												href="/admin/products" class="btn btn-info">Detail</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-4 mt-2">
+									<div class="card text-center">
+										<div class="card-body">
+											<img src="../images/ip13.jpeg" width="90%" alt=""
+												class="img-fuid">
+											<div class=" text-center mt-2">
+												<b>Iphone13 Pro Max</b>
+											</div>
+										</div>
+										<div class="card-footer">
+											<a href="#" class="btn btn-success">Buy</a> <a
+												href="/admin/products" class="btn btn-info">Detail</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-4 mt-2">
+									<div class="card text-center">
+										<div class="card-body">
+											<img src="../images/computer-vip.jpg" width="100%" height="205px" alt=""
+												class="img-fuid">
+											<div class=" text-center mt-2">
+												<b>PC Gaming</b>
+											</div>
+										</div>
+										<div class="card-footer">
+											<a href="#" class="btn btn-success">Buy</a> <a
+												href="/admin/products" class="btn btn-info">Detail</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-4 mt-5">
+									<div class="card text-center">
+										<div class="card-body">
+											<img src="../images/macbook.jpg" width="90%" height="205px" alt=""
+												class="img-fuid">
+											<div class=" text-center mt-2">
+												<b>Macbook Pro</b>
+											</div>
+										</div>
+										<div class="card-footer">
+											<a href="#" class="btn btn-success">Buy</a> <a
+												href="/admin/products" class="btn btn-info">Detail</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-4 mt-5">
+									<div class="card text-center">
+										<div class="card-body">
+											<img src="../images/mouse.jpg" width="90%" alt=""
+												class="img-fuid">
+											<div class=" text-center mt-2">
+												<b>Logitech</b>
+											</div>
+										</div>
+										<div class="card-footer">
+											<a href="#" class="btn btn-success">Buy</a> <a
+												href="/admin/products" class="btn btn-info">Detail</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-4 mt-5">
+									<div class="card text-center">
+										<div class="card-body">
+											<img src="../images/headphone.jpg" width="90%" alt=""
+												class="img-fuid">
+											<div class=" text-center mt-2">
+												<b>HeadPhone</b>
+											</div>
+										</div>
+										<div class="card-footer">
+											<a href="#" class="btn btn-success">Buy</a> <a
+												href="/admin/products" class="btn btn-info">Detail</a>
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="row">
+								<div class="col">
+									<nav aria-label="Page navigation">
+										<ul class="pagination justify-content-center">
+											<li class="page-item disabled"><a class="page-link"
+												href="#" aria-label="Previous"> <span aria-hidden="true">&laquo;</span>
+													<span class="sr-only">Previous</span>
+											</a></li>
+											<li class="page-item active"><a class="page-link"
+												href="#">1</a></li>
+											<li class="page-item"><a class="page-link" href="#">2</a></li>
+											<li class="page-item"><a class="page-link" href="#"
+												aria-label="Next"> <span aria-hidden="true">&raquo;</span>
+													<span class="sr-only">Next</span>
+											</a></li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+						<div class="col-2">
+							<div class="row mt-3  float-right">
+								<col>
+								<div class="card">
+									<div class="card-header">
+										<i class="fa fa-thumbs-up" aria-hidden="true"> Favorites</i>
+									</div>
+									<ul class="list-group list-group-flush">
+										<li class="list-group-item">Laptop</li>
+										<li class="list-group-item">Mycomputer</li>
+										<li class="list-group-item">Headphones</li>
+										<li class="list-group-item">Mouse</li>
+										<li class="list-group-item">keyboard</li>
+									</ul>
+								</div>
+								</col>
+							</div>
+						</div>
+					</section>
+
+
+				</div>
+
+
+			</div>
+		</div>
+
+
+	</section>
+</html>

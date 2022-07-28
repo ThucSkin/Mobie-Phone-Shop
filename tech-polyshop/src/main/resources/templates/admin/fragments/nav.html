@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" 
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+</head>
+
+<body>
+
+  <div th:fragment="nav">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <a class="navbar-brand" href="#"><h3>Nidal-Shop</h3></a>
+      <button class="navbar-toggler d-lg-none" type="button"
+       data-toggle="collapse" data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId"
+          aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul  class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a  class="nav-link" href="/home"><b>Home</b> <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" href="#"><b> Manage Customer</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" th:href="@{/admin/categories/searchpaginated}"><b>Manage Category</b></a>
+          </li>
+          <li class="nav-item">
+            <a  class="nav-link" th:href="@{/admin/products}"><b>Manage Product</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><b>Manage Order</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><b>Manage Profile</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" th:href="@{/admin/accounts}"><b>Manage Account</b></a>
+          </li>
+         
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search "></i></button>
+        </form>
+      </div>
+    </nav>
+  </div>
+</body>
